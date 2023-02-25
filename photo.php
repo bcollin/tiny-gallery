@@ -10,15 +10,18 @@ $title = $page_title = 'Photo ' . $id;
 
 require_once('header.php');
 
-$next = $id + 1;
-if ($next > 16) {
-	$next = 1;
-}
+$next = ($id > ($conf['length'] - 1)) ? 1 : $id + 1;
+$prev = ($id > 1) ? $id - 1 : $conf['length'];
 ?>
 
 <p class="breadcrumbs"><a href="./">Overview</a> / Photo <?php print $id; ?></p>
 
-<a href="photo.php?id=<?=$next?>"><img src="gallery_example/<?=$id?>.<?=$conf['type']?>" alt="" title=""></a>
+<div class="item"><a href="photo.php?id=<?=$next?>"><img src="gallery_example/<?=$id?>.<?=$conf['type']?>" alt="[entry]" title=""></a></div>
+
+<div class="nav nav-pager">
+  <a href="photo.php?id=<?=$prev?>">Previous entry</a>
+  <a href="photo.php?id=<?=$next?>">Next entry</a>
+</div>
 
 <?php
 require_once('footer.php');
