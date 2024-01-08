@@ -15,21 +15,24 @@
 		border: .2em solid blue; 
 	}
 	img {
-		margin: 1em;
+		max-width: 100%;
+		height: auto;
+		margin: 1em 0em;
 		vertical-align: top;
 	}
 	.gallery img {
-		max-width: 64px;
-		height: auto;
+		max-width: 20%;
+		margin: 1em;
 	}
 	#main {
 		text-align: left;
 	}
+  .gallery #main 
 	-->
 	</style>
 </head>
 
-<body>
+<body class="<?=$name?>">
 
 
 <div id="main">
