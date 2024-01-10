@@ -13,7 +13,7 @@
     $src_set .= $gallery . 'thumbs_480/' . $file_name . ' 480w, ';
     $src_set .= $gallery . 'thumbs_720/' . $file_name . ' 720w, ';
     $src_set .= $img_url . ' 1200w';
-    $sizes = '(max-width: 320px) 320px, (min-width: 480px) 480px, (max-width: 720px) 720px, 1200px';
+    $sizes = '(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 720px) 720px, 1200px';
     
     $html = '<img src="' . $img_url . '" srcset="' . $src_set . '" sizes="' . $sizes . '" alt="[entry]" title="">';
     
@@ -26,30 +26,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title><?php print $title; ?></title>
-	<style type="text/css">
-	<!--
-  a img { 
-    border: none; 
-  }
-	.gallery a img {
-		border: .2em solid blue; 
-	}
-	img {
-		max-width: 100%;
-		height: auto;
-		margin: 1em 0em;
-		vertical-align: top;
-	}
-	.gallery img {
-		max-width: 20%;
-		margin: 1em;
-	}
-	#main {
-		text-align: left;
-	}
-  .gallery #main 
-	-->
-	</style>
+  <link rel="Stylesheet" type="text/css" href="style.css">
 </head>
 
 <body class="<?=$name?>">

@@ -27,40 +27,5 @@ $prev = ($id > 1) ? $id - 1 : $conf['length'];
   </div>
 </div>
 
-<style>
-.item { position: relative;}
-.item > a { display: block; text-align: center;}
-.item > a > img { margin: 0; }
-.nav-pager { 
-  position: absolute; 
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-}
-.nav-pager a { 
-  display: block;
-  position: absolute;
-  width: 50%; 
-  height: 100%;
-  font-weight: bold;
-  color: red;
-  text-decoration: none;
-  text-align: right;
-}
-.nav-pager a:last-child {
-  right: 0px;
-  text-align: left;
-}
-.nav-pager a span {
-  position: relative; 
-  top: 2em;
-  margin: 1em;
-  padding: .5em;
-  background: #fff;
-}
-
-<style>
-
 <?php
 require_once('footer.php');
