@@ -1,6 +1,10 @@
 <?php 
-  $conf['type'] = 'png';
-  $conf['length'] = 16;
+  if (file_exists('conf.php')) {
+    include_once('conf.php');
+  }
+  else { 
+    require_once('conf-example.php');
+  }
 
   // Renders an image tag.
   function the_image($id=0) {
@@ -30,7 +34,6 @@
 </head>
 
 <body class="<?=$name?>">
-
 
 <div id="main">
 
