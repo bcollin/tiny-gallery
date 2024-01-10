@@ -9,7 +9,7 @@ require_once('header.php');
 		for ($i = 1; $i < (1 + $conf['length']); $i++) : 
 		$ii = sprintf("%02d", $i); 
 	?>
-		<a href="photo.php?id=<?=$ii?>"><img src="gallery_example/<?=$ii?>.<?=$conf['type']?>" alt="[image]" title=""></a>
+		<a href="photo.php?id=<?=$ii?>"><?php print the_image($ii); ?></a>
 	<?php endfor; ?>
 	</div>
 	

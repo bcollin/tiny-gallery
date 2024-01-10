@@ -1,7 +1,7 @@
 
 While clearing out my main drive, I ran into some old projects from the early 2000s.
 
-This is a gallery I built for a customer who wanted something very basic. These days of course I would have plucked somethign from the internet.
+This is a gallery I built for a customer who wanted something very basic. These days of course I would have plucked something from the internet.
 
 It amuses me how little PHP it took.
 

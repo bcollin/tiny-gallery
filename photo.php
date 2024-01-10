@@ -18,7 +18,7 @@ $prev = ($id > 1) ? $id - 1 : $conf['length'];
 <p class="breadcrumbs"><a href="./">Overview</a> / Photo <?php print $id; ?></p>
 
 <div class="item">
-  <a href="photo.php?id=<?=$next?>"><img src="gallery_example/<?=$id?>.<?=$conf['type']?>" alt="[entry]" title=""></a>
+  <a href="photo.php?id=<?=$next?>"><?php print the_image($id); ?></a>
   
   
   <div class="nav nav-pager">
