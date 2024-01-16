@@ -14,6 +14,8 @@
 
 $conf = array();
 
+// ONLY EDIT BELOW.
+
 // Image type used in this gallery, e.g. 'png', 'jpg', 'webp'.
 $conf['type'] = 'png'; // Default: 'png'.
 
