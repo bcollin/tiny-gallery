@@ -1,13 +1,13 @@
 <?php 
-  if (file_exists('conf.php')) {
-    include_once('conf.php');
+  if (file_exists('config.php')) {
+    include_once('config.php');
   }
   else { 
-    require_once('conf-example.php');
+    require_once('config-example.php');
   }
 
   // Renders an image tag.
-  function the_image($id=0) {
+  function the_image($id = 0) {
     global $conf; 
     
     $gallery = 'gallery_example/';
