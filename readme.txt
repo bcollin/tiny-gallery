@@ -9,7 +9,7 @@ It amuses me how little PHP it took.
 
 I would like to share that amusement.
 
-I have removed the customer's photos, modernised the HTML (i.e. changed the DTD) and have added an extra layer: the original did not have a list of galleries.
+I have removed the customer's photos and modernised the HTML, i.e. changed the DTD.
 
 Note that this was written before Javascript-heavy galleries were prevalent, hence the use of photo.php to load the large image.
 
